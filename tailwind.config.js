@@ -33,7 +33,9 @@ module.exports = {
                 dark4: "#8F999C",
                 dark2: "#3C4649",
                 dark5: "#C1C8CA",
+                dark7: "#EFF2F3",
                 sky: "#3bafdd",
+                dark8: "#F6F9FF",
             },
             boxShadow: {
                 shadow1: "0px 10px 30px rgba(0, 33, 71, 0.08)",

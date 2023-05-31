@@ -105,7 +105,7 @@ export default function Header() {
                                 </li>
                             </ul>
 
-                            <button type="button" className="nav-btn bg-sky transition-all hover:bg-cyan-400 text-white font-normal py-3 px-5 text-center flex items-center hover:-translate-y-0.5">
+                            <button type="button" className="nav-btn bg-sky transition-all hover:bg-cyan-400 text-white font-normal py-3 px-5 text-center flex items-center ">
                                 DISCOVER MORE
                             </button>
                         </div>

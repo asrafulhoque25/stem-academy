@@ -15,9 +15,7 @@ export default function WhyAbroad() {
                         <p className="mb-8 text-dark4">
                             Nullam non nisi est sit amet. Arcu vitae elementum curabitur vitae nunc. Ut tellus elementum sagittis vitae et leo duis. Accumsan sit amet nulla facilisi morbi
                         </p>
-                        <button className="bg-[#EAF9FF]  py-3 px-8 rounded-lg text-[#3BAFDD] hover:text-[#fff] font-bold text-sm transition-all hover:bg-yellow-300 hover:-translate-y-0.5">
-                            READ MORE
-                        </button>
+                        <button className="bg-yellow-400  py-3 px-8 rounded-lg text-dark1 font-bold text-[14px] transition-all hover:bg-yellow-300">READ MORE</button>
                     </div>
                 </div>
             </div>

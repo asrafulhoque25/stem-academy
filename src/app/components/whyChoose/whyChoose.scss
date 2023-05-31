@@ -1,0 +1,19 @@
+
+.whyChoose{
+  background-image: url('../../../../public/assets/img/article-shape.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+.choose-right{
+  .shape-bg{
+    position: relative;
+
+    .shapeImg{
+      position: absolute;
+      top: -30%;
+      right: -30%;
+      z-index: -22;
+    }
+  }
+}
