@@ -5,8 +5,17 @@ import location from "../../../../public/assets/img/location.svg";
 import sms from "../../../../public/assets/img/sms.svg";
 import call from "../../../../public/assets/img/call-calling.svg";
 import logo from "../../../../public/assets/img/logo.svg";
+import hambarger from "../../../../public/assets/img/hambarger.png";
 import "./header.scss";
+import { useState } from "react";
 export default function Header() {
+
+    const [open,setOpen] = useState(false);
+
+      const handleToggle = () => {
+    setOpen(!open);
+  };
+
     return (
         <div>
             <div className="top-header bg-black py-4">
@@ -63,53 +72,58 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className="bottom-header bg-white">
+            <div className="bottom-header bg-white relative">
                 <div className="container">
-                    <div className="flex items-center justify-between py-6">
-                        <div className="brand">
+                    <div className="flex items-center justify-between py-6 ">
+                        <div className="brand flex-shrink-0">
                             <Link href={"/"}>
                                 <Image src={logo} className="" alt="" />
                             </Link>
                         </div>
-                        <div className="menu-link flex items-center gap-6">
-                            <ul className="flex items-center gap-8">
-                                <li className="">
-                                    <Link href={"/"} className=" text-dark3 transition-all font-medium hover:text-dark1">
-                                        Home
-                                    </Link>
-                                </li>
-                                <li className="">
-                                    <Link href={"/about"} className=" text-dark3 transition-all font-medium hover:text-dark1">
-                                        About Us
-                                    </Link>
-                                </li>
-                                <li className="">
-                                    <Link href={"/service"} className=" text-dark3 transition-all font-medium hover:text-dark1">
-                                        Destinations
-                                    </Link>
-                                </li>
-                                <li className="">
-                                    <Link href={"/immigration"} className=" text-dark3 transition-all font-medium hover:text-dark1">
-                                        Immigration
-                                    </Link>
-                                </li>
-                                <li className="">
-                                    <Link href={"/contact"} className=" text-dark3 transition-all font-medium hover:text-dark1">
-                                        Contact
-                                    </Link>
-                                </li>
-                                <li className="">
-                                    <Link href={"/blog"} className=" text-dark3 transition-all font-medium hover:text-dark1">
-                                        Blog
-                                    </Link>
-                                </li>
-                            </ul>
+                     
+                            <div className={`menu-link flex items-center gap-6 ${open && "active"}`}>
+                                <ul className="flex items-center gap-8">
+                                    <li className="">
+                                        <Link href={"/"} className=" text-dark3 transition-all font-medium hover:text-dark1">
+                                            Home
+                                        </Link>
+                                    </li>
+                                    <li className="">
+                                        <Link href={"/about"} className=" text-dark3 transition-all font-medium hover:text-dark1">
+                                            About Us
+                                        </Link>
+                                    </li>
+                                    <li className="">
+                                        <Link href={"/service"} className=" text-dark3 transition-all font-medium hover:text-dark1">
+                                            Destinations
+                                        </Link>
+                                    </li>
+                                    <li className="">
+                                        <Link href={"/immigration"} className=" text-dark3 transition-all font-medium hover:text-dark1">
+                                            Immigration
+                                        </Link>
+                                    </li>
+                                    <li className="">
+                                        <Link href={"/contact"} className=" text-dark3 transition-all font-medium hover:text-dark1">
+                                            Contact
+                                        </Link>
+                                    </li>
+                                    <li className="">
+                                        <Link href={"/blog"} className=" text-dark3 transition-all font-medium hover:text-dark1">
+                                            Blog
+                                        </Link>
+                                    </li>
+                                </ul>
 
-                            <button type="button" className="nav-btn bg-sky transition-all hover:bg-cyan-400 text-white font-normal py-3 px-5 text-center flex items-center ">
-                                DISCOVER MORE
-                            </button>
-                        </div>
+                                <button type="button" className="nav-btn bg-sky transition-all hover:bg-cyan-400 text-white font-normal py-3 px-5 text-center flex items-center ">
+                                    DISCOVER MORE
+                                </button>
+                            </div>
+                     
                     </div>
+                    <button type="button" className="menubar" onClick={handleToggle}>
+                        <Image src={hambarger} alt="hambarger" className="" />
+                    </button>
                 </div>
             </div>
         </div>

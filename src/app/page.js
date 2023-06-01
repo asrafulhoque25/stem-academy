@@ -8,6 +8,7 @@ import Testimonial from "./components/testimonial/Testimonial";
 import WhyAbroad from "./components/whyAbroad/WhyAbroad";
 import WhyChoose from "./components/whyChoose/WhyChoose";
 
+
 export default function Home() {
   return (
       <main className="">

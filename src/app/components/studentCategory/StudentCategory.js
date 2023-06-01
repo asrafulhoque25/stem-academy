@@ -39,13 +39,13 @@ export const StudentCategory = () => {
             }}
         >
             <div className="container">
-                <div className="category-items flex items-center justify-between gap-8">
+                <div className="category-items grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-nowrap items-center justify-between gap-5 lg:gap-6 xl:gap-8">
                     {categoryData.map((data, index) => {
                         return (
                             <>
-                                <Link href={data.path} key={index} className="hover:border-[#fff] hover:shadow-shadow1 transition-all rounded-2xl p-10 border-[#DEE3E4] border-[1px]">
+                            <Link href={data.path} key={index} className="hover:border-[#fff] hover:shadow-shadow1 transition-all w-full rounded-2xl xl:p-10 lg:p-5 p-4 border-[#DEE3E4] border-[1px]">
                                     <Image src={data.image} alt="img" className="mx-auto mb-5" />
-                                    <h4 className=" text-lg font-semibold text-dark1">{data.title}</h4>
+                                    <h4 className=" text-lg font-semibold text-dark1 text-center">{data.title}</h4>
                                 </Link>
                             </>
                         );

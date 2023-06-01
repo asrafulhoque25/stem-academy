@@ -40,11 +40,11 @@ export default function ChooseDestination() {
       <div className="section-padding bg-[#F6F9FF] section-padding">
           <div className="container">
               <div className="chooseDestination">
-                  <h2 className="text-[38px] font-semibold text-dark1 text-center mb-10">
+                  <h2 className="sm:text-[38px] text-[32px] font-semibold text-dark1 text-center mb-10">
                       Choose your learning <br className="d-none d-xl-inline" /> country for study!
                   </h2>
               </div>
-              <div className="grid grid-cols-3 gap-8">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-4 md:gap-6 lg:gap-8">
                   {data.map((info) => {
                       return (
                           <div className="destination-details shadow-shadow2 p-3 rounded-2xl" key={info.id}>
@@ -77,7 +77,7 @@ export default function ChooseDestination() {
                       );
                   })}
               </div>
-              <div className='mt-12 flex justify-center'>
+              <div className="mt-12 flex justify-center">
                   <button className="bg-yellow-400  py-3 px-8 rounded-lg text-dark1 font-bold text-[14px] transition-all hover:bg-yellow-300 hover:-translate-y-0.5">VIEW ALL</button>
               </div>
           </div>

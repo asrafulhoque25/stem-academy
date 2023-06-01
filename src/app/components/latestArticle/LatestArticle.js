@@ -40,9 +40,9 @@ export default function LatestArticle() {
         <div className="latestArticle section-padding">
             <div className="container">
                 <div className="title">
-                    <h2 className="text-[38px] font-semibold text-dark1 text-center mb-12">Our latest articles</h2>
+                    <h2 className="sm:text-[38px] text-[32px] font-semibold text-dark1 text-center mb-12">Our latest articles</h2>
                 </div>
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-4 md:gap-4 lg:gap-6">
                     {data.map((data, index) => {
                         return (
                             <div className="article" key={index}>

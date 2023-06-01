@@ -40,12 +40,12 @@ export default function Brand() {
   return (
       <div className="brand section-padding bg-dark7">
           <div className="container">
-              <div className="brand-title flex items-center justify-center gap-4 text-lg font-semibold text-dark1 mb-10">
-                  <span>
+              <div className="brand-title block text-center lg:flex flex-wrap lg:flex-nowrap items-center justify-center gap-4 text-lg font-semibold text-dark1 mb-10">
+                  <span className='lg:block lg:opacity-1 opacity-0'>
                       <Image src={line1} alt="line" />
                   </span>
                   International<span className='font-extrabold'>University & Colleges</span>our partner
-                  <span>
+                  <span className='lg:block lg:opacity-1 opacity-0'>
                       <Image src={line2} alt="line" />
                   </span>
               </div>

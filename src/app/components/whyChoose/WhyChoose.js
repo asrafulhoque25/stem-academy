@@ -11,9 +11,9 @@ export default function WhyChoose() {
   return (
       <div className="whyChoose section-padding bg-dark8">
           <div className="container">
-              <div className="chooseWrap grid grid-cols-2 gap-14">
+              <div className="chooseWrap grid grid-cols-1 md:grid-cols-2 md:gap-14 gap-6">
                   <div className="chooseLeft">
-                      <h2 className="text-[38px] font-semibold text-dark1 mb-6">Why choose us?</h2>
+                      <h2 className="sm:text-[38px] text-[32px] font-semibold text-dark1 mb-6">Why choose us?</h2>
                       <p className="text-lg text-dark1  mb-6">
                           Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore feugiat nulla facilisis at vero eros et accumsan et iusto odio...
                       </p>
@@ -38,7 +38,7 @@ export default function WhyChoose() {
                       <button className="bg-yellow-400  py-3 px-8 rounded-lg text-dark1 font-bold text-[14px] transition-all hover:bg-yellow-300  mt-8">APPLY NOW</button>
                   </div>
 
-                  <div className="choose-right flex gap-8">
+                  <div className="choose-right flex lg:gap-8 gap-4 justify-center">
                       <div className="flex flex-col">
                           <div className="choose-right-item shadow-shadow1 rounded-2xl p-8 text-center mb-8">
                               <Image src={service1} alt="service" className="mx-auto pb-6" />
@@ -52,7 +52,7 @@ export default function WhyChoose() {
                           </div>
                       </div>
                       <div className="flex  flex-col mt-12 shape-bg">
-                      <Image src={shapeBg} alt="service" className="shapeImg" />
+                          <Image src={shapeBg} alt="service" className="shapeImg lg:block hidden" />
                           <div className="choose-right-item shadow-shadow1 rounded-2xl p-8 text-center  mb-8">
                               <Image src={service3} alt="service" className="mx-auto pb-6" />
                               <p className=" text-dark3 mb-3 text-sm font-semibold">University</p>

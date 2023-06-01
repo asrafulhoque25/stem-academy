@@ -1,9 +1,11 @@
+"use client"
 // import { Inter } from "next/font/google";
+import { motion, useScroll } from "framer-motion";
+import { Poppins } from "next/font/google";
 import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
+import ScrollToTop from "./components/scrolltotop/ScrollToTop";
 import "./globals.css";
-import { Poppins } from "next/font/google";
-
 
 // const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -17,12 +19,17 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+     const { scrollYProgress } = useScroll();
+
+
     return (
         <html lang="en">
             <body suppressHydrationWarning={true} className={poppins.className}>
+                <motion.div className="fixed top-0 left-0 right-0 z-50 h-2 origin-left bg-yellow-400" style={{ scaleX: scrollYProgress }} />
                 <Header />
                 {children}
                 <Footer />
+                <ScrollToTop />
             </body>
         </html>
     );

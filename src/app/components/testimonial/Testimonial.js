@@ -6,22 +6,22 @@ export default function Testimonial() {
   return (
       <div className="testimonial section-padding">
           <div className="container">
-              <div className="testimonial-wrapper grid grid-cols-2 gap-12 items-center ">
+              <div className="testimonial-wrapper grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ">
                   <div className="testimonial-left">
                       <div className="testimonial-img">
-                          <Image src={testimonialImg} alt="testimonial image" className="" />
+                          <Image src={testimonialImg} alt="testimonial image" className="lg:mr-auto m-auto" />
                       </div>
                   </div>
                   <div className="testimonial-right">
                       <Image src={quote} alt="quote" className=" mb-8" />
-                      <p className=" text-dark2 text-[26px] font-medium mb-8">
+                      <p className=" text-dark2 sm:text-[26px] text-[22px] font-medium mb-8">
                           “Maku e whai kaha, whai mana hei whakamana i ahau ano noku mana hei whakaarahi tuakana. Aliquam erat volutpat. Morbi in orci risus. Etiam ut accumsan leo.“
                       </p>
                       <div className="flex items-center gap-3 ">
                           <Image src={writer} alt="writer" className="" />
                           <div>
                               <h4 className=" text-2xl font-semibold text-dark1">Robert Fox</h4>
-                              <p className=' text-dark3 text-[16px] '>CSE Student</p>
+                              <p className=" text-dark3 text-[16px] ">CSE Student</p>
                           </div>
                       </div>
                   </div>
