@@ -94,7 +94,7 @@ export default function Header() {
                                         </Link>
                                     </li>
                                     <li className="">
-                                        <Link href={"/service"} className=" text-dark3 transition-all font-medium hover:text-dark1">
+                                        <Link href={"/destination"} className=" text-dark3 transition-all font-medium hover:text-dark1">
                                             Destinations
                                         </Link>
                                     </li>
