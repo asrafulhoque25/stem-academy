@@ -1,19 +1,11 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-
 import AboutFeature from "../components/aboutFeature/AboutFeature";
 import LatestArticle from "../components/latestArticle/LatestArticle";
 import SubBanner from "../components/subBanner/SubBanner";
 import WhyChoose from "../components/whyChoose/WhyChoose";
 
 const page = () => {
-    // const router = useRouter();
-
-    // console.log(router);
-
-     const pathname = usePathname();
-     console.log(pathname)
 
     return (
         <div>

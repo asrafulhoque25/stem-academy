@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function BlogItemsDetails() {
   return (
       <div className="blogItemDetails">
@@ -55,7 +53,7 @@ export default function BlogItemsDetails() {
           <div className="blogDetailWrap py-24">
             <div className="grid">
               <div className="blogDetailsLeft">
-                
+
               </div>
             </div>
           </div>
