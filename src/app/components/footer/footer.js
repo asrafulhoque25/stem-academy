@@ -13,7 +13,7 @@ export default function Footer() {
                       <h3 className=" text-2xl font-semibold text-white mb-3 leading-10">Dreaming To Study Abroad? We Give Wings To Your Dreams</h3>
                       <p className=" text-sm font-semibold text-[#A3A3A3]">Consequat voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                   </div>
-                  <div className="flex items-center gap-6">
+                  <div className="flex flex-wrap items-center gap-6">
                       <button type="button" className="nav-btn bg-sky transition-all hover:bg-cyan-400 text-white font-normal py-3 px-5 text-center flex items-center ">
                           DISCOVER MORE
                       </button>

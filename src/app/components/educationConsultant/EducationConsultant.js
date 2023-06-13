@@ -9,7 +9,7 @@ export default function EducationConsultant() {
                   <div className="consultant-left mb-8 lg:mb-0">
                       <Image src={consultant} alt="consultant" className=" h-full w-auto" />
                   </div>
-                  <div className="consultant-content">
+                  <div className="consultant-content px-9">
                       <h2 className="mb-5 text-[32px] sm:text-[38px] font-semibold leading-[48px] text-dark1">Study abroad with the best overseas education consultants</h2>
                       <h4 className="mb-5 text-lg font-semibold text-dark2">Tmply dummy text of the printing and typesetting industry. Psum has been theindustry’s standard.</h4>
                       <p className="mb-8">

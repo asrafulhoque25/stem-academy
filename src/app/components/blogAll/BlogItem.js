@@ -12,7 +12,7 @@ export default function BlogItem() {
     return (
         <div className="blog-wrap py-24">
             <div className="container">
-                <div className="grid grid-cols-3 gap-8 ">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
                     {blogData.map((data, index) => {
                         return (
                             <div className="blog-item p-[15px] shadow-shadow1 rounded-2xl mb-3" key={index}>

@@ -3,11 +3,11 @@ export default function SubBanner({ SubBgImg, title, links1, links2, links3 }) {
     return (
         <div className="subBanner min-h-[480px] bg-no-repeat bg-cover flex items-center" style={{ backgroundImage: `url(${SubBgImg})` }}>
             <div className="container">
-                <h2 className=" text-[50px] font-semibold text-dark1 mb-3">{title}</h2>
+                <h2 className="text-[40px] md:text-[50px] font-semibold text-dark1 mb-3">{title}</h2>
                 <div className="subbanner-content">
                     <div>
                         <nav class="flex mb-6" aria-label="Breadcrumb">
-                            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                            <ol class="inline-flex items-center flex-wrap space-x-1 md:space-x-3">
                                 <li class="inline-flex items-center">
                                     <a href={"/"} class="inline-flex items-center text-lg font-semibold text-[#3BAFDD] hover:text-dark5 ">
                                         {links1}

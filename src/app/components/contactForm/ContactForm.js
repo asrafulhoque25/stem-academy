@@ -12,7 +12,7 @@ export default function ContactForm() {
     return (
         <div className="ContactForm pt-28">
             <div className="container">
-                <div className="grid grid-cols-2 gap-10">
+                <div className="grid md:grid-cols-2 gap-10">
                     <div className="contact-left max-w-[420px] w-full">
                         <div className="contact-hints flex items-center gap-2">
                             <div className="bg-[#3BAFDD] h-[7px] w-[7px] rounded-full "></div>
@@ -45,7 +45,7 @@ export default function ContactForm() {
                         <p className="text-base text-dark">Get in touch to help us facilitate your Second Passport journey.</p>
 
                         <form className="mt-8">
-                            <div className="grid grid-cols-2 gap-6 mb-2">
+                            <div className="grid md:grid-cols-2 gap-6 mb-2">
                                 <div class="mb-4">
                                     <label class="block text-dark2 text-sm font-semibold mb-2" for="username">
                                         Name

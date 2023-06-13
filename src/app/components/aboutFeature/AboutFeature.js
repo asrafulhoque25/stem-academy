@@ -10,7 +10,7 @@ export default function AboutFeature() {
   return (
     <div className='aboutFeature pt-28 pb-16'>
         <div className="container">
-            <div className="feature-grid grid grid-cols-2 gap-10">
+            <div className="feature-grid grid md:grid-cols-2 gap-10">
                 <div className="challenge-feature">
                     <h3 className=' font-semibold text-3xl leading-10 text-dark1'>Today the demand of the youth is to study and work overseas for a challenging & secured future</h3>
                     <div className="top-header-left flex flex-col mt-8 gap-6">
