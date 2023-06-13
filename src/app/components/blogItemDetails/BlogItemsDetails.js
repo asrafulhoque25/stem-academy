@@ -1,6 +1,6 @@
-
-import Image from 'next/image';
-import blogImg from '../../../../public/assets/img/blog-details.png'
+"use client";
+import Image from "next/image";
+import blogImg from "../../../../public/assets/img/blog-details.png";
 import aboutCheck from "../../../../public/assets/img/about-Check.svg";
 import share1 from "../../../../public/assets/img/share1.svg";
 import share2 from "../../../../public/assets/img/share2.svg";
@@ -11,9 +11,9 @@ import reply2 from "../../../../public/assets/img/replyWriter2.png";
 import reply3 from "../../../../public/assets/img/replyWriter3.png";
 import replylogo from "../../../../public/assets/img/reply.svg";
 import arrowRight from "../../../../public/assets/img/arrowRight.svg";
-import Link from 'next/link';
-import './BlogItemsDetails.scss'
-import Accordion from './Accordion';
+import Link from "next/link";
+import "./BlogItemsDetails.scss";
+import Accordion from "./Accordion";
 
 // import cta from "../../../../public/assets/img/cta.png";
 
@@ -82,8 +82,8 @@ export default function BlogItemsDetails() {
                             tristique malesuada. Viverra nisi, velit nibh orci fermentum commodo purus. Imper diettincidunt fringilla eget.
                         </p>
                         <p className="text-base text-dark3 pt-5 pb-8">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't
-                            look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont
+                            look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isnt anything embarrassing hidden in the middle of text. All the
                             Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
                         </p>
                         <div>
@@ -110,7 +110,10 @@ export default function BlogItemsDetails() {
                                     <p className="text-dark3 text-lg ">Fast response to requests & critical response time guaranteed</p>
                                 </li>
                             </ul>
-                            <div className="cta py-12 px-10 bg-cover rounded-[6px] bg-no-repeat mt-10 mb-5 w-full min-h-[260px] flex items-center justify-center" style={{ backgroundImage: `url(${cta})` }}>
+                            <div
+                                className="cta py-12 px-10 bg-cover rounded-[6px] bg-no-repeat mt-10 mb-5 w-full min-h-[260px] flex items-center justify-center"
+                                style={{ backgroundImage: `url(${cta})` }}
+                            >
                                 <div className="text-center">
                                     <h2 className=" text-[38px] font-semibold text-white leading-tight mb-6">
                                         Start Your Educational <br className="hidden xl:inline-block" /> Journey
